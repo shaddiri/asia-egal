@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIA EGAL Calculator</title>
+    <link rel="stylesheet" href="asia-egal.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <h1>ASIA EGAL</h1>
+            <div class="decoration">
+                <span class="heart">♥</span>
+                <span class="star">★</span>
+                <span class="flower">✿</span>
+            </div>
+        </div>
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="buttons">
+            <button class="btn pink" onclick="clearDisplay()">C</button>
+            <button class="btn purple" onclick="deleteLastChar()">⌫</button>
+            <button class="btn blue" onclick="appendToDisplay('%')">%</button>
+            <button class="btn orange" onclick="appendToDisplay('/')">/</button>
+            
+            <button class="btn pink" onclick="appendToDisplay('7')">7</button>
+            <button class="btn pink" onclick="appendToDisplay('8')">8</button>
+            <button class="btn pink" onclick="appendToDisplay('9')">9</button>
+            <button class="btn orange" onclick="appendToDisplay('*')">×</button>
+            
+            <button class="btn pink" onclick="appendToDisplay('4')">4</button>
+            <button class="btn pink" onclick="appendToDisplay('5')">5</button>
+            <button class="btn pink" onclick="appendToDisplay('6')">6</button>
+            <button class="btn orange" onclick="appendToDisplay('-')">-</button>
+            
+            <button class="btn pink" onclick="appendToDisplay('1')">1</button>
+            <button class="btn pink" onclick="appendToDisplay('2')">2</button>
+            <button class="btn pink" onclick="appendToDisplay('3')">3</button>
+            <button class="btn orange" onclick="appendToDisplay('+')">+</button>
+            
+            <button class="btn pink zero" onclick="appendToDisplay('0')">0</button>
+            <button class="btn pink" onclick="appendToDisplay('.')">.</button>
+            <button class="btn green equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="asia-egal.js"></script>
+</body>
+</html>
